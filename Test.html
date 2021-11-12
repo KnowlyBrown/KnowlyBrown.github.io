@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Display Text</title>
+    <link rel="stylesheet" href="css/St.css">
+   <!-- 
+   <style>
+       body{background-color: rgb(82, 69, 76);}
+       .container{background-color: rgb(227, 245, 68);
+            border-radius: 10px; top: 50%;padding: 20px;}
+       .inputs{background: rgb(87, 161, 130);
+             width: 200px; padding: 1em; border-radius: 30%;}
+       .btn{ margin-top: 10px; width: 150px; font-size: 1rem; justify-content: center;
+            border-radius: 20%;background-color: rgb(87, 161, 118);margin-left: 40px;}
+       .display{background-color: lawngreen;}
+    </style>
+  -->
+  </head>
+  <body>
+
+    <div class="container">
+        <p id="display-text" class="display"> </p>
+        <Input type="text" id="text-input" class="inputs"> <br>
+        <button onclick="getInputValue( )" class="btn">Check! </button>
+            
+    </div>
+    
+    <script>
+        function getInputValue (){
+            const inputVal = document.getElementById("text-input"). value;
+            return document.getElementById("display-text").innerHTML = inputVal;
+        }
+    </script>
+  </body>
+</html>
